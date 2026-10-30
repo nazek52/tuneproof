@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "kind": "soup-data-bundle",
+    "source_sha256": "d15305396a08ee060fb9e8523b0d832df64b6796374f4dcfd1cb8b6e56249605"
+  },
+  "files": {
+    "audit.json": "974c1e5f1af94384a363d11dad4a187a4dab8f3ffc369c3a27253a4bb97f8124",
+    "soup.yaml": "49caebdb48091aafaf7006367962675c861eb7ebca73f0926d37461ac02ab052",
+    "train.jsonl": "53bb4aab2b3f65c493fa86194ac4c22d4e85156c8080c2fed27ab8f0655477ce",
+    "validation.jsonl": "163b6191adc2af264e757628d91922269a921810f57cdbb208b12994c3415e0e"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "tests": {
+    "passed": 84,
+    "failed": 0,
+    "skipped": 0
+  },
+  "coverage": {
+    "covered_lines": 531,
+    "num_statements": 544,
+    "percent_covered": 97.61029411764706,
+    "percent_covered_display": "98",
+    "missing_lines": 13,
+    "excluded_lines": 0,
+    "percent_statements_covered": 97.61029411764706,
+    "percent_statements_covered_display": "98"
+  },
+  "checks": {
+    "ruff_check": "passed",
+    "ruff_format": "passed",
+    "reference_manifest": {
+      "ok": true,
+      "checked_files": 7,
+      "failed_files": [],
+      "unexpected_files": []
+    },
+    "soup_bundle_manifest": {
+      "ok": true,
+      "checked_files": 4,
+      "failed_files": [],
+      "unexpected_files": []
+    }
+  },
+  "versions": {
+    "tuneproof": "0.1.0",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.3.5",
+    "PyYAML": "6.0.3",
+    "soup-cli": "0.77.1",
+    "pytest": "9.2.0",
+    "pytest-cov": "7.1.0",
+    "ruff": "0.17.3"
+  },
+  "scope": "Local Python 3.12 run. Remote GitHub Actions status is reported separately."
+}

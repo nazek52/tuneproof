@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "source_sha256": "d15305396a08ee060fb9e8523b0d832df64b6796374f4dcfd1cb8b6e56249605",
+  "valid_rows": 10,
+  "invalid_rows": 0,
+  "errors": [],
+  "prompt_components": 9,
+  "duplicate_or_similar_rows": 1,
+  "conflicting_prompt_lines": [],
+  "threshold": 0.8,
+  "method": "NFKC casefold prompt equality + word-bigram Jaccard components",
+  "limitations": "Lexical only; no semantic or privacy-safety guarantee.",
+  "components": [
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ]
+  ],
+  "train_rows": 8,
+  "validation_rows": 2,
+  "seed": 42,
+  "requested_val_fraction": 0.2,
+  "actual_val_fraction": 0.2
+}

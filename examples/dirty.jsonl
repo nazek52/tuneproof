@@ -1,0 +1,7 @@
+{"instruction":"What is LoRA?","output":"Low-rank adaptation."}
+{"instruction":" WHAT is LoRA? ","output":"A full model training method."}
+{"instruction":"What is validation?","output":"Held-out evaluation."}
+{"instruction":"Empty response","output":""}
+{"instruction":"Wrong type","output":42}
+this is not JSON
+[]

@@ -1,0 +1,2 @@
+{"instruction": "Why hold out validation data?", "input": "", "output": "To evaluate examples that were not used to update the model."}
+{"instruction": "What does learning rate zero do?", "input": "", "output": "The optimizer should not change model parameters."}

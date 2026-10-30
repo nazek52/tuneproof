@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tuneproof"
+version = "0.1.0"
+description = "Evidence-first fine-tuning lab: leakage-aware datasets, real CPU LoRA and negative controls"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["PyYAML>=6.0,<7"]
+
+[project.optional-dependencies]
+ml = ["torch>=2.5,<3", "numpy>=1.26,<3"]
+dev = ["pytest>=8,<10", "pytest-cov>=6,<8", "ruff>=0.12,<1"]
+soup = ["soup-cli==0.77.1"]
+
+[project.scripts]
+tuneproof = "tuneproof.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["ml: needs PyTorch", "integration: CLI and artifact tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/tuneproof/report.py" = ["E501"]  # Embedded HTML/CSS template.

@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "kind": "measured-cpu-experiment",
+  "task": "synthetic ticket routing; verbose-to-label format adaptation",
+  "config": {
+    "seed": 42,
+    "pretrain_steps": 180,
+    "adapter_steps": 240,
+    "batch_size": 24,
+    "learning_rate": 0.008,
+    "threads": 2
+  },
+  "model": {
+    "width": 48,
+    "heads": 4,
+    "layers": 2,
+    "context": 96,
+    "rank": 4,
+    "alpha": 8.0
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.15.0+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "device": "cpu"
+  },
+  "parameters": {
+    "total": 92620,
+    "adapter": 7372,
+    "adapter_percent": 7.959404016411142
+  },
+  "data": {
+    "train_rows": 128,
+    "validation_rows": 32,
+    "train_prompt_digest": "74438663e5b2e094da4d5e01974b22482d2d8aac406f5da845ba7a21594c7839",
+    "validation_prompt_digest": "cff7df69b18447d783a463658b9228c1557039afa4892e6fbc722169721102af",
+    "split_policy": "ticket IDs 000-031 train, 032-039 validation; shared templates"
+  },
+  "base": {
+    "response_nll": 3.6103846232096353,
+    "response_tokens": 240,
+    "exact_match": 0.0,
+    "correct": 0,
+    "routing_label_match": 1.0,
+    "examples": 32,
+    "samples": [
+      {
+        "prompt": "Ticket 032: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 033: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 034: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 035: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 036: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 037: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 038: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 039: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 032: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 033: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 034: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 035: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 036: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 037: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 038: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 039: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 032: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 033: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 034: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 035: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 036: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 037: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 038: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 039: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 032: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 033: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 034: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 035: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 036: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 037: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 038: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 039: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      }
+    ]
+  },
+  "lora": {
+    "response_nll": 0.0011913709342479706,
+    "response_tokens": 240,
+    "exact_match": 1.0,
+    "correct": 32,
+    "routing_label_match": 1.0,
+    "examples": 32,
+    "samples": [
+      {
+        "prompt": "Ticket 032: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 033: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 034: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 035: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 036: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 037: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 038: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 039: help with refund",
+        "expected": "BILLING",
+        "generated": "BILLING"
+      },
+      {
+        "prompt": "Ticket 032: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 033: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 034: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 035: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 036: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 037: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 038: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 039: help with password",
+        "expected": "ACCOUNT",
+        "generated": "ACCOUNT"
+      },
+      {
+        "prompt": "Ticket 032: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 033: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 034: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 035: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 036: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 037: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 038: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 039: help with crash",
+        "expected": "TECH",
+        "generated": "TECH"
+      },
+      {
+        "prompt": "Ticket 032: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 033: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 034: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 035: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 036: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 037: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 038: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      },
+      {
+        "prompt": "Ticket 039: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "SHIPPING"
+      }
+    ]
+  },
+  "zero_lr": {
+    "response_nll": 3.6103846232096353,
+    "response_tokens": 240,
+    "exact_match": 0.0,
+    "correct": 0,
+    "routing_label_match": 1.0,
+    "examples": 32,
+    "samples": [
+      {
+        "prompt": "Ticket 032: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 033: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 034: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 035: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 036: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 037: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 038: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 039: help with refund",
+        "expected": "BILLING",
+        "generated": "The route is BILLING."
+      },
+      {
+        "prompt": "Ticket 032: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 033: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 034: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 035: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 036: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 037: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 038: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 039: help with password",
+        "expected": "ACCOUNT",
+        "generated": "The route is ACCOUNT."
+      },
+      {
+        "prompt": "Ticket 032: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 033: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 034: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 035: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 036: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 037: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 038: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 039: help with crash",
+        "expected": "TECH",
+        "generated": "The route is TECH."
+      },
+      {
+        "prompt": "Ticket 032: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 033: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 034: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 035: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 036: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 037: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 038: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      },
+      {
+        "prompt": "Ticket 039: help with delivery",
+        "expected": "SHIPPING",
+        "generated": "The route is SHIPPING."
+      }
+    ]
+  },
+  "checks": {
+    "frozen_base_unchanged": true,
+    "zero_lr_base_unchanged": true,
+    "zero_lr_adapter_unchanged": true,
+    "adapter_changed": true,
+    "zero_lr_logits_identical": true,
+    "no_exact_prompt_overlap": true
+  },
+  "max_control_logit_delta": 0.0,
+  "base_parameter_sha256": "5512c8fecbe60897c15fd83eb2462d573e039ec485ead16a6d9ade4d5e053311",
+  "adapter_parameter_sha256": "aa7ec813d9ada82d0e6d86356f091cea10556d400f6a315bba36b0bff342479e",
+  "duration_seconds": 12.46775829300168,
+  "limitations": [
+    "Tiny model on synthetic data, not a pretrained LLM benchmark.",
+    "Shared lexical templates make this an easy in-distribution task.",
+    "One seed; no statistical significance or general capability claim.",
+    "Custom checkpoints are not PEFT/Soup-compatible adapters."
+  ]
+}

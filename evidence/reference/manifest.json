@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "kind": "measured-cpu-experiment",
+    "seed": 42
+  },
+  "files": {
+    "adapted.pt": "baea3d4076ab1e965755067fde1be3033edb925d02d75f1a3d9ad407f25c6b50",
+    "base.pt": "f75cfccbfb650cb0b45ae8b65bf9553f6dbb400381a48d6cc4cf7f9642d819ed",
+    "curves.json": "b84ef110722b6ad4970edac2c51d11bec81f1226138601c9657538614efafedc",
+    "report.html": "a4b81eac56dc487021b96c423d6c0ac9fad7b2b40c912160a74f7983bcb16be2",
+    "results.json": "6f869b80cc9b743820ab09ddceb28617c38e04c30a1b5de063cc2232d6251f9e",
+    "train.json": "0edfd55ab445eea71aa0828d5af4940b67ab88e800637812a661ab361d2c6eed",
+    "validation.json": "9f08ff47aa399ad29bcdf5ead5f6145b3a802ee42fed1919b8cef84b9a27c03f"
+  }
+}

@@ -1,0 +1,8 @@
+{"instruction": "Explain Python dictionaries", "input": "", "output": "Dictionaries map unique keys to values."}
+{"instruction": "Explain Python dictionaries", "input": "", "output": "Dictionaries map unique keys to values."}
+{"instruction": "How do I create a virtual environment?", "input": "", "output": "Run python -m venv .venv, then activate it for your shell."}
+{"instruction": "What is gradient descent?", "input": "", "output": "An optimization method that updates parameters against the loss gradient."}
+{"instruction": "Define LoRA", "input": "", "output": "Freeze base weights and learn a low-rank update."}
+{"instruction": "Describe causal attention", "input": "", "output": "Each token can attend only to itself and earlier tokens."}
+{"instruction": "Токен деген не?", "input": "", "output": "Модель өңдейтін мәтіннің бөлігі."}
+{"instruction": "Зачем нужен Git?", "input": "", "output": "Для сохранения и совместного просмотра истории изменений."}

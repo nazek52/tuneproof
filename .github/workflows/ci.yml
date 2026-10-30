@@ -1,0 +1,32 @@
+name: quality-and-real-ml-smoke
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -e ".[ml,dev,soup]"
+      - run: python -m ruff check .
+      - run: python -m ruff format --check .
+      - run: python -m pytest --cov=tuneproof --cov-report=term-missing --cov-report=xml --junitxml=test-results.xml
+      - name: Real CPU experiment
+        run: python -m tuneproof experiment --output runs/ci --pretrain-steps 10 --adapter-steps 10 --threads 1
+      - run: python -m tuneproof verify runs/ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-python-${{ matrix.python }}
+          path: |
+            test-results.xml
+            coverage.xml
+            runs/ci/

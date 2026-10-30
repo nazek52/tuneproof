@@ -1,0 +1,10 @@
+{"instruction":"Explain Python dictionaries","input":"","output":"Dictionaries map unique keys to values."}
+{"instruction":"Explain Python dictionaries","input":"","output":"Dictionaries map unique keys to values."}
+{"instruction":"How do I create a virtual environment?","input":"","output":"Run python -m venv .venv, then activate it for your shell."}
+{"instruction":"What is gradient descent?","input":"","output":"An optimization method that updates parameters against the loss gradient."}
+{"instruction":"Why hold out validation data?","input":"","output":"To evaluate examples that were not used to update the model."}
+{"instruction":"Define LoRA","input":"","output":"Freeze base weights and learn a low-rank update."}
+{"instruction":"Describe causal attention","input":"","output":"Each token can attend only to itself and earlier tokens."}
+{"instruction":"What does learning rate zero do?","input":"","output":"The optimizer should not change model parameters."}
+{"messages":[{"role":"user","content":"Токен деген не?"},{"role":"assistant","content":"Модель өңдейтін мәтіннің бөлігі."}]}
+{"messages":[{"role":"user","content":"Зачем нужен Git?"},{"role":"assistant","content":"Для сохранения и совместного просмотра истории изменений."}]}

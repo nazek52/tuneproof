@@ -1,0 +1,130 @@
+[
+  {
+    "prompt": "Ticket 032: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 033: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 034: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 035: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 036: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 037: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 038: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 039: help with refund",
+    "response": "BILLING"
+  },
+  {
+    "prompt": "Ticket 032: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 033: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 034: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 035: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 036: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 037: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 038: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 039: help with password",
+    "response": "ACCOUNT"
+  },
+  {
+    "prompt": "Ticket 032: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 033: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 034: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 035: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 036: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 037: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 038: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 039: help with crash",
+    "response": "TECH"
+  },
+  {
+    "prompt": "Ticket 032: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 033: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 034: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 035: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 036: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 037: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 038: help with delivery",
+    "response": "SHIPPING"
+  },
+  {
+    "prompt": "Ticket 039: help with delivery",
+    "response": "SHIPPING"
+  }
+]
