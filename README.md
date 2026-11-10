@@ -1,13 +1,20 @@
-# TuneProof
+<a id="tuneproof"></a>
 
-**Did fine-tuning actually work? Inspect the data, the gradients, and the control.**
+<p>
+  <img src="docs/assets/project-header.svg" alt="TuneProof — Fine-tuning with evidence." width="100%">
+</p>
 
-A compact Python ML engineering portfolio project: leakage-aware dataset preparation,
-a real byte-level causal transformer, explicit LoRA, held-out evaluation and a matched
-zero-learning-rate control. Runs locally on CPU without model downloads or API keys.
+[![Checks](https://github.com/nazek52/tuneproof/actions/workflows/ci.yml/badge.svg)](https://github.com/nazek52/tuneproof/actions/workflows/ci.yml)
 
-Independent educational project; not affiliated with Soup. This is a tiny synthetic
-experiment, not a benchmark of a pretrained LLM.
+A reproducible LoRA experiment with a byte-level causal transformer, leakage-aware dataset preparation, held-out evaluation, and a matched zero-learning-rate control. Run it locally on CPU and inspect the reports, checkpoints, and integrity manifests.
+
+Independent educational project using a tiny synthetic task; not a pretrained-LLM benchmark or an affiliation with Soup.
+
+**Python · PyTorch · LoRA · evaluation**
+
+[Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Results & evidence](evidence/README.md) · [Русский разбор](docs/DEFENSE_RU.md)
+
+---
 
 ## Quick start
 
@@ -89,11 +96,11 @@ artifact tampering, CLI flows, causal attention, response masking, LoRA identity
 gradient updates, frozen base and the real training/control experiment. GitHub Actions
 runs on Python 3.11/3.12. No paid service or credentials are needed.
 
-## Honest authorship and limitations
+## Scope and provenance
 
-Developed with AI assistance. The repository includes a learning walkthrough; running
-generated code is not the same as being able to maintain it. Do not claim independent
-implementation or professional ML experience on the basis of this project.
+Independent educational implementation developed with AI assistance. Source code,
+validation evidence, and a Russian walkthrough are included so the experiment can be
+inspected and reproduced.
 
 No semantic decontamination, privacy certification, distributed training, production
 service, large-model result or guaranteed improvement. Manifests detect accidental
