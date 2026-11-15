@@ -10,6 +10,9 @@ A reproducible LoRA experiment with a byte-level causal transformer, leakage-awa
 
 Independent educational project using a tiny synthetic task; not a pretrained-LLM benchmark or an affiliation with Soup.
 
+> [!NOTE]
+> **Selected for XERJ Corpus Hub — November 2026.** XERJ selected this CPU LoRA implementation for inclusion as a worked reference, with author and repository attribution. [Selection details](docs/XERJ_RECOGNITION.md) · [XERJ](https://github.com/xerj-org/xerj)
+
 **Python · PyTorch · LoRA · evaluation**
 
 [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Results & evidence](evidence/README.md) · [Русский разбор](docs/DEFENSE_RU.md)
