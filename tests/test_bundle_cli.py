@@ -85,7 +85,12 @@ def test_symlink_refused(tmp_path):
     target.write_text("x")
     directory = tmp_path / "bundle"
     directory.mkdir()
-    (directory / "linked").symlink_to(target)
+    try:
+        (directory / "linked").symlink_to(target)
+    except OSError as exc:
+        if getattr(exc, "winerror", None) == 1314:
+            pytest.skip("Windows does not grant this process symlink creation privileges")
+        raise
     write_json(directory / "manifest.json", {"schema_version": 1, "files": {"linked": "x"}})
     with pytest.raises(ValueError, match="symlink"):
         verify(directory)
@@ -102,10 +107,13 @@ def test_invalid_manifest(tmp_path, payload):
 
 def test_manifest_roundtrip(tmp_path):
     (tmp_path / "file.txt").write_text("hello")
+    nested = tmp_path / "nested"
+    nested.mkdir()
+    (nested / "file.txt").write_text("world")
     manifest(tmp_path, {"test": True})
     assert verify(tmp_path) == {
         "ok": True,
-        "checked_files": 1,
+        "checked_files": 2,
         "failed_files": [],
         "unexpected_files": [],
     }

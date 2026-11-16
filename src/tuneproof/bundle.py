@@ -7,7 +7,7 @@ import json
 import shutil
 import tempfile
 from contextlib import contextmanager
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 
 import yaml
 
@@ -74,16 +74,17 @@ def verify(directory: Path) -> dict:
         raise ValueError("manifest has no files")
     failures = []
     for name, expected in entries.items():
-        relative = Path(name)
+        relative = PurePosixPath(name)
         if (
             relative.is_absolute()
+            or PureWindowsPath(name).anchor
             or ".." in relative.parts
             or "\\" in name
             or not relative.parts
             or name == "manifest.json"
         ):
             raise ValueError("unsafe manifest path")
-        target = directory / relative
+        target = directory.joinpath(*relative.parts)
         if any(p.is_symlink() for p in [target, *target.parents] if p != directory.parent):
             raise ValueError("symlink in artifact path")
         if not target.is_file() or sha256(target) != expected:
