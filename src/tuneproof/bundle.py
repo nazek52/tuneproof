@@ -84,7 +84,7 @@ def verify(directory: Path) -> dict:
             or name == "manifest.json"
         ):
             raise ValueError("unsafe manifest path")
-        target = directory.joinpath(*relative.parts)
+        target = directory / name
         if any(p.is_symlink() for p in [target, *target.parents] if p != directory.parent):
             raise ValueError("symlink in artifact path")
         if not target.is_file() or sha256(target) != expected:
