@@ -1,0 +1,3 @@
+# Evidence manifests hash the exact committed bytes.
+/evidence/reference/** -text
+/evidence/soup-bundle/** -text
